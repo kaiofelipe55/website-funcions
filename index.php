@@ -28,7 +28,7 @@ header("Content-type:text/html; charset=utf-8");
                     <li><a href="logout.php">Sair</a></li>
                     <li class="navbar_direita"><img height="52px" src="img/user_default.png"></li>
                     <li class="navbar_direita"><a href=""><?php echo $_SESSION['user_nome']; ?></a></li>
-                    <li class="navbar_direita"><a href="carteira.php"><?php echo "R$".$_SESSION['carteira'].".00"; ?></a></li>
+                    <li class="navbar_direita"><a href="carteira.php"><?php carteira(); ?></a></li>
                     <li class="navbar_direita"><a href="carrinho.php"><img src="img/sacola.png" height="22px"></a></li>
                 <?php else: ?>
                     <li><a href="panel.php">Painel</a></li>
